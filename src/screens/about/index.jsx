@@ -90,7 +90,7 @@ const About = () => (
             <img src={SocialLinkedIn} alt="linkedin" />
           </a>
           <a
-            href="https://github.com/brunopintos"
+            href="https://github.com/brunopintos98"
             target="_blank"
             rel="noreferrer"
           >
