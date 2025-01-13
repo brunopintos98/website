@@ -1,0 +1,65 @@
+.projects-main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.projects-title {
+  position: fixed;
+  font-family: "BenchNine", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  color: #cccccc11;
+  font-size: 250px;
+  text-align: center;
+  user-select: none;
+}
+
+.projects-container {
+  padding-top: 60px;
+  z-index: 1;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 35px;
+  }
+}
+
+.projects-down-arrow-container {
+  animation: move 1s linear infinite;
+  position: absolute;
+  left: "50%";
+  bottom: 20px;
+}
+
+.projects-down-arrow {
+  width: 30px;
+  position: relative;
+  left: "-50%";
+}
+
+@media (max-width: 850px) {
+  .projects-title {
+    font-size: 20vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-main-container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .projects-down-arrow {
+    display: none;
+  }
+}

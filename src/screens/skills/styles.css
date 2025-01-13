@@ -1,0 +1,105 @@
+.skills-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-electrons-container {
+  position: relative;
+  width: 98%;
+  height: 90%;
+}
+
+.skills-background-image {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  object-fit: contain;
+  margin-top: 0;
+  margin-left: -1.5vw;
+  user-select: none;
+}
+
+.skills-title {
+  position: absolute;
+  font-family: "BenchNine", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  color: #cccccc11;
+  font-size: 250px;
+  text-align: center;
+  user-select: none;
+}
+
+.skills-electrons-container > div:nth-child(4) {
+  animation-delay: -1s;
+}
+
+.skills-electrons-container > div:nth-child(5) {
+  animation-delay: -2s;
+}
+
+.skills-electrons-container > div:nth-child(6) {
+  animation-delay: -7s;
+}
+
+.skills-electrons-container > div:nth-child(7) {
+  animation-delay: -8s;
+}
+
+.skills-electrons-container > div:nth-child(8) {
+  animation-delay: -11s;
+}
+
+.skills-electrons-container > div:nth-child(9) {
+  animation-delay: -14s;
+}
+
+@media (min-width: 1024px) {
+  .skills-background-image {
+    margin-top: 0;
+    margin-left: -1.5vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills-background-image {
+    margin-top: 0;
+    margin-left: -1vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .skills-background-image {
+    width: 93%;
+    height: 93%;
+    margin-top: 1.5vw;
+    margin-left: 0;
+  }
+  .skills-title {
+    font-size: 20vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills-background-image {
+    width: 91%;
+    height: 91%;
+    margin-top: 5vw;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-background-image {
+    width: 91%;
+    height: 91%;
+    margin-top: 7.5vw;
+    margin-left: 1vw;
+  }
+}

@@ -1,0 +1,225 @@
+.about-main-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 90px 20px 5vh 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  padding-top: 20px;
+}
+
+.about-title {
+  position: absolute;
+  font-family: "BenchNine", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  color: #cccccc11;
+  font-size: 250px;
+  text-align: center;
+  user-select: none;
+  z-index: 1;
+}
+
+.about-images-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 550px;
+  z-index: 2;
+}
+
+.about-social {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-images-container img {
+  position: absolute;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform 40ms linear;
+  user-select: none;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+
+.about-social img {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.about-images-container img:nth-child(1) {
+  bottom: 0;
+  left: 5%;
+  width: 33%;
+  background-image: url("assets/bruno-vice-low.jpg"),
+    url("assets/bruno-vice-low-low.jpg");
+  filter: grayscale(100%);
+}
+
+.about-images-container img:nth-child(2) {
+  top: 5%;
+  left: 0;
+  width: 35%;
+  background-image: url("assets/bruno-doron-low.jpg"),
+    url("assets/bruno-doron-low-low.jpg");
+  filter: grayscale(100%);
+}
+
+.about-images-container img:nth-child(3) {
+  top: 0;
+  right: 0;
+  width: 32%;
+  background-image: url("assets/bruno-office-low.jpg"),
+    url("assets/bruno-office-low-low.jpg");
+  filter: grayscale(100%);
+}
+
+.about-images-container img:nth-child(4) {
+  top: 26%;
+  left: 30%;
+  width: 50%;
+  background-image: url("assets/bruno-low.jpg"), url("assets/bruno-low-low.jpg");
+  filter: grayscale(100%);
+}
+
+.about-images-container img:hover {
+  z-index: 3;
+  transform: scale(150%);
+  filter: none;
+}
+
+.about-text-container {
+  z-index: 2;
+  width: 50%;
+  padding: 0px 5% 100px 5%;
+}
+
+.about-paragraph-title {
+  z-index: 2;
+  font-size: 2vw !important;
+  margin-bottom: 0px;
+}
+
+.about-paragraph-subtitle {
+  z-index: 2;
+  font-weight: bold;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.about-container a {
+  cursor: pointer;
+  color: #ffffffaa;
+}
+
+.about-container a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 20vw;
+  }
+  .about-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: unset;
+  }
+  .about-images-container {
+    width: 100%;
+    height: 250px;
+  }
+  .about-images-container img:nth-child(1) {
+    top: 20%;
+    left: 4%;
+    height: 60%;
+    width: unset;
+  }
+  .about-images-container img:nth-child(2) {
+    top: 10%;
+    left: 18%;
+    height: 80%;
+    width: unset;
+  }
+  .about-images-container img:nth-child(3) {
+    top: 15%;
+    right: 4%;
+    height: 70%;
+    width: unset;
+  }
+  .about-images-container img:nth-child(4) {
+    top: 5%;
+    left: 40%;
+    height: 90%;
+    width: unset;
+  }
+  .about-images-container img:hover {
+    z-index: 3;
+    transform: scale(120%);
+  }
+  .about-text-container {
+    width: 100%;
+    z-index: 1;
+  }
+  .about-paragraph-title {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-images-container {
+    height: 230px;
+  }
+}
+
+@media (max-width: 475px) {
+  .about-images-container {
+    height: 200px;
+  }
+  .about-images-container img:nth-child(1) {
+    top: 20%;
+    left: 4%;
+    height: 60%;
+    width: unset;
+  }
+  .about-images-container img:nth-child(2) {
+    top: 12%;
+    left: 16%;
+    height: 76%;
+    width: unset;
+  }
+  .about-images-container img:nth-child(3) {
+    top: 15%;
+    right: 4%;
+    height: 70%;
+    width: unset;
+  }
+  .about-images-container img:nth-child(4) {
+    top: 7.5%;
+    left: 36%;
+    height: 85%;
+    width: unset;
+  }
+}
