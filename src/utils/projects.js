@@ -2,36 +2,56 @@ import {
   ProjectAaos,
   ProjectAyp,
   ProjectBxl,
-  ProjectCarChat,
+  ProjectSMA,
   ProjectCenterlinePortal,
   ProjectCH,
   ProjectFigo,
   ProjectJShip,
   ProjectLithium,
   ProjectTwicketTwist,
+  ProjectRivelin,
+  ProjectVolca,
 } from "assets";
 
 const projects = [
   {
-    key: 10,
-    title: "TicketTwist",
+    key: 12,
+    title: "Volca",
     type: "📱",
-    link: "https://www.tickettwist.app/",
+    link: "https://www.volca.ai/",
     image: {
-      src: ProjectTwicketTwist,
-      alt: "Project TicketTwist",
+      src: ProjectVolca,
+      alt: "Project Volca",
     },
     description: {
       text1:
-        "As the CEO and developer, I led the team and participated in all stages of the development and launch of TicketTwist, a secure and reliable platform for buying and selling event tickets.",
+        "Volca is a referral automation platform designed for home service businesses like HVAC, plumbing, and landscaping. It simplifies and scales referral programs by allowing users to send leads via text, track their status, and receive automated rewards. This makes it easy for businesses to leverage word-of-mouth marketing efficiently.",
       text2:
-        "I worked as a full-stack developer, utilizing React Native for the mobile application and Node.js for the backend. My responsibilities included overseeing the project's development, ensuring a seamless user experience, and implementing robust security measures to protect users during transactions.",
+        "As a Senior React Native Developer at Volca, I played a key role in building and optimizing the SMS referral functionality, ensuring seamless lead submissions and real-time tracking. I also worked on improving the app’s UI/UX, making the referral process intuitive and engaging for users.",
     },
-    color: "#892ce0",
-    year: "2024",
+    color: "#f1440a",
+    year: "2024 - Present",
   },
   {
-    key: 9,
+    key: 11,
+    title: "Stafftrack Mobile App",
+    type: "📱",
+    link: "https://meetstafftrack.com/",
+    image: {
+      src: ProjectSMA,
+      alt: "Project SMA",
+    },
+    description: {
+      text1:
+        "As a Senior React Native Developer at TrueBlue, I worked on improving Stafftrack mobile application, designed to streamline workforce management. The app helps employees view schedules, pick up shifts, track attendance, refer friends for jobs, and provide feedback, making it an essential tool for efficient staffing.",
+      text2:
+        "I led the development of new features and improvements to the Stafftrack mobile app. I also worked on improving the app's performance and reliability.",
+    },
+    color: "#3977AE",
+    year: "2023 - Present",
+  },
+  {
+    key: 10,
     title: "Centerline Portal",
     type: "🖥",
     link: "https://www.centerlinedrivers.com/",
@@ -46,28 +66,28 @@ const projects = [
         "Charged with the responsibility of crafting an intuitive and user-friendly website, I played a key role in the successful creation of the platform. This site facilitates seamless tracking of expenses, generates insightful reports, and optimizes the management of driver qualifications for enhanced operational efficiency.",
     },
     color: "#C8102E",
-    year: "2023-2024",
+    year: "2023 - Present",
   },
   {
-    key: 8,
-    title: "CarChat",
+    key: 9,
+    title: "TicketTwist",
     type: "📱",
-    link: "https://getcarchat.com/",
+    link: "https://www.tickettwist.app/",
     image: {
-      src: ProjectCarChat,
-      alt: "Project CarChat",
+      src: ProjectTwicketTwist,
+      alt: "Project TicketTwist",
     },
     description: {
       text1:
-        "In my role as a technical leader, I've had the privilege of steering the development efforts for the CarChat React Native project, an innovative mobile application designed to keep users informed about their vehicles in real-time. Tasked with providing a seamless user experience, I played a pivotal role in overseeing the front-end development using React Native.",
+        "I led the team and participated in all stages of the development and launch of TicketTwist, a secure and reliable platform for buying and selling event tickets.",
       text2:
-        "The CarChat app serves as a powerful tool, enabling users to send and receive quick messages, keeping them updated on various aspects of their vehicles, such as leaving hazards on, flat tires, broken windows, towing alerts, burnt lights, and more.",
+        "I worked as a full-stack developer, utilizing React Native for the mobile application and Node.js for the backend. My responsibilities included overseeing the project's development, ensuring a seamless user experience, and implementing robust security measures to protect users during transactions.",
     },
-    color: "#3EEEB2",
-    year: "2023-2024",
+    color: "#892ce0",
+    year: "2024",
   },
   {
-    key: 7,
+    key: 8,
     title: "Cooper's Hawk",
     type: "📱",
     link: "https://chwinery.com/coopers-hawk-mobile-app",
@@ -77,15 +97,15 @@ const projects = [
     },
     description: {
       text1:
-        "As a React Native developer, I played a key role in crafting the Cooper’s Hawk mobile app. Designed for Wine Club Members, the app provides exclusive content. Non-members can register to explore locations, menus, wines, and the Wine Club. The app offers user-friendly features, including simplified reservations, a comprehensive menu with wine pairings, Wine Club sign-up, location exploration, and seamless carryout ordering with exclusive benefits.",
+        "As a React Native developer, I played a key role in crafting the Cooper's Hawk mobile app. Designed for Wine Club Members, the app provides exclusive content. Non-members can register to explore locations, menus, wines, and the Wine Club. The app offers user-friendly features, including simplified reservations, a comprehensive menu with wine pairings, Wine Club sign-up, location exploration, and seamless carryout ordering with exclusive benefits.",
       text2:
-        "My expertise in React Native development is showcased in the app's functionality and user engagement features, enhancing the Cooper’s Hawk Wine Club experience.",
+        "My expertise in React Native development is showcased in the app's functionality and user engagement features, enhancing the Cooper's Hawk Wine Club experience.",
     },
     color: "#BD7F28",
     year: "2022-2023",
   },
   {
-    key: 6,
+    key: 7,
     title: "Arly Families And Arly Teams",
     type: "📱",
     link: "https://apps.apple.com/us/developer/the-b-e-l-l-foundation-inc/id1604989918",
@@ -103,7 +123,7 @@ const projects = [
     year: "2022",
   },
   {
-    key: 5,
+    key: 6,
     title: "AAOS Membership",
     type: "📱",
     link: "https://apps.apple.com/ca/app/aaos-membership-app/id1635988366",
@@ -121,7 +141,7 @@ const projects = [
     year: "2021-2022",
   },
   {
-    key: 4,
+    key: 5,
     title: "Pet Cloud",
     type: "📱",
     link: "https://apps.apple.com/us/app/pet-cloud/id1278520013",
@@ -133,13 +153,13 @@ const projects = [
       text1:
         "As a React Native developer for Figo Pet Insurance's Pet Cloud app, I led the front-end development of key features aimed at enhancing communication between pet owners and veterinarians globally. The primary focus was the implementation of a real-time chat system using SignalR, ensuring live communication, chat history, notifications, and ratings. The app encompasses various features, including Inbox & Docs for organizing medical records, reminders for vaccinations, Loss Prevention with unique pet tags, and Live Vet Access for 24/7 veterinary support.",
       text2:
-        "Additionally, seamless integration with Figo Pet Insurance allows users to submit claims and manage their pet’s health records effortlessly through the app. My role as a front-end lead developer involved spearheading the implementation of these critical features to provide users with a comprehensive and user-friendly experience on the Pet Cloud app.",
+        "Additionally, seamless integration with Figo Pet Insurance allows users to submit claims and manage their pet's health records effortlessly through the app. My role as a front-end lead developer involved spearheading the implementation of these critical features to provide users with a comprehensive and user-friendly experience on the Pet Cloud app.",
     },
     color: "#73DAD2",
     year: "2021",
   },
   {
-    key: 3,
+    key: 4,
     title: "JShip",
     type: "🖥",
     link: "https://jship.com/",
@@ -154,7 +174,25 @@ const projects = [
         "The platform seamlessly integrates with renowned carriers like UPS, FedEx, and USPS, offering customizable shipping features. My contributions ensured an intuitive and efficient user experience, simplifying the shipping process for users and enhancing the overall functionality of the JShip platform.",
     },
     color: "#23D686",
-    year: "2020-2021",
+    year: "2021",
+  },
+  {
+    key: 3,
+    title: "Rivelin",
+    type: "🖥",
+    link: "https://www.effectussoftware.com/our-work/rivelin",
+    image: {
+      src: ProjectRivelin,
+      alt: "Project Rivelin",
+    },
+    description: {
+      text1:
+        "Rivelin is a web app designed to help businesses maintain a categorized budget and all financial information centralized.",
+      text2:
+        "The app allows administrators to manage accounts and reports that can be displayed in tables or graphs at the user's preferred time interval. This makes it possible to generate comprehensive snapshots of the current financial status and to recognize any any financial trends in the business.",
+    },
+    color: "#F3942C",
+    year: "2020",
   },
   {
     key: 2,
